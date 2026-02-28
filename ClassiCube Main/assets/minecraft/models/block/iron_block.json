@@ -2,7 +2,7 @@
 	"parent": "minecraft:block/cube_bottom_top",
 	"textures": {
 		"top": "minecraft:block/iron_block",
-		"side": "minecraft:block/extended/iron_block_side",
-		"bottom": "minecraft:block/extended/iron_block_bottom"
+		"side": "minecraft:block/classicube-extensions/iron_block_side",
+		"bottom": "minecraft:block/classicube-extensions/iron_block_bottom"
 	}
 }
