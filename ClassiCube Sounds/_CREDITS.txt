@@ -1,0 +1,52 @@
+Sound pack assembled by csnxs for ClassiCube
+Ported to Minecraft by sofa (comfiestsofa)
+
+step_wood*
+	by Freesound user kyles
+	Creative Commons 0 License
+	https://freesound.org/people/kyles/sounds/451142/
+	
+step_snow*
+	by Freesound user musicbrain
+	Creative Commons 0 License
+	https://freesound.org/people/musicbrain/sounds/215690/
+	
+step_gravel*
+	by Freesound user smokingsound
+	Creative Commons Attribution
+	https://freesound.org/people/smokingsound/sounds/331703/
+	
+step_grass*
+	by Freesound user Yuval
+	Creative Commons 0 License
+	https://freesound.org/people/Yuval/sounds/206030/
+	
+step_stone*
+	by Freesound user Yuval
+	Creative Commons 0 License
+	https://freesound.org/people/Yuval/sounds/205748/
+	
+step_sand*
+	by Freesound user audioninja001
+	Creative Commons 0 License
+	https://freesound.org/people/audioninja001/sounds/455062/
+	
+step_cloth*
+	by Freesound user jskrundz
+	Creative Commons 0 License
+	https://freesound.org/people/jskrundz/sounds/435691/
+	
+dig_glass1
+	by Freesound user RoganDerrick
+	Creative Commons Attribution
+	https://freesound.org/people/RoganDerrick/sounds/260434/
+	
+dig_glass2
+	by Freesound user cmusounddesign
+	Creative Commons Attribution
+	https://freesound.org/people/cmusounddesign/sounds/85107/
+	
+dig_glass3
+	by Freesound user ToxicFilmzSRsounds
+	Creative Commons 0 License
+	https://freesound.org/people/ToxicFilmzSRsounds/sounds/378568/
