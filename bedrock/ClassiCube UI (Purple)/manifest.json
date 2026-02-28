@@ -1,0 +1,17 @@
+{
+	"format_version": 1,
+	"header": {
+		"name": "ClassiCube UI (Purple)",
+		"description": "ClassiCube's crosshair, and hotbar/buttons in purple. Made by zoey (goodly), ported by sofa (comfiestsofa).\n\nClassiCube: https://classicube.net",
+		"uuid": "54dc718c-39dd-4e67-9a08-27b1b5d5a585",
+		"version": [1, 0, 0]
+	},
+	"modules": [
+		{
+			"description": "ClassiCube's crosshair, and hotbar/buttons in purple. Made by zoey (goodly), ported by sofa (comfiestsofa).\n\nClassiCube: https://classicube.net",
+			"type": "resources",
+			"uuid": "e9bca52c-29ca-4c00-afab-081cd80d6f14",
+			"version": [1, 0, 0]
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"format_version": 1,
+	"header": {
+		"name": "ClassiCube All-In-One",
+		"description": "ClassiCube's textures and font, with a few tweaks. Made by zoey (goodly), ported and modified by sofa (comfiestsofa).\n\nClassiCube: https://classicube.net\nIncludes some textures from CustomOpenBlocks: https://github.com/NotAwesome2/CustomOpenBlocks",
+		"uuid": "85c5025c-adfa-4ca4-9ddb-3d9fe6e801d7",
+		"version": [1, 0, 0]
+	},
+	"modules": [
+		{
+			"description": "ClassiCube's textures and font, with a few tweaks. Made by zoey (goodly), ported and modified by sofa (comfiestsofa).\n\nClassiCube: https://classicube.net\nIncludes some textures from CustomOpenBlocks: https://github.com/NotAwesome2/CustomOpenBlocks",
+			"type": "resources",
+			"uuid": "1bb88208-70fa-427d-8601-46eccdc584f0",
+			"version": [1, 0, 0]
+		}
+	]
+}

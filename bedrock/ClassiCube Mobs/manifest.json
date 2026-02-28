@@ -1,0 +1,17 @@
+{
+	"format_version": 1,
+	"header": {
+		"name": "ClassiCube Mobs",
+		"description": "ClassiCube's mob textures. Made by zoey (goodly), ported by sofa (comfiestsofa).\n\nClassiCube: https://classicube.net",
+		"uuid": "91a564c0-9949-4189-95c7-80982ee64873",
+		"version": [1, 0, 0]
+	},
+	"modules": [
+		{
+			"description": "ClassiCube's mob textures. Made by zoey (goodly), ported by sofa (comfiestsofa).\n\nClassiCube: https://classicube.net",
+			"type": "resources",
+			"uuid": "e8d5b285-782e-4261-b9e1-5c942e9e2088",
+			"version": [1, 0, 0]
+		}
+	]
+}

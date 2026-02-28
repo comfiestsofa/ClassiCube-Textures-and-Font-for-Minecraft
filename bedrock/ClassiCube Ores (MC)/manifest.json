@@ -1,0 +1,17 @@
+{
+	"format_version": 1,
+	"header": {
+		"name": "ClassiCube Ores (MC)",
+		"description": "(Put above Main) Vanilla-style iron, gold, and coal ores. Stone texture made by zoey (goodly), ores modified by sofa (comfiestsofa).\n\nClassiCube: https://classicube.net",
+		"uuid": "7d86863d-562a-4b26-9a53-5e4f6e9a3025",
+		"version": [1, 0, 0]
+	},
+	"modules": [
+		{
+			"description": "(Put above Main) Vanilla-style iron, gold, and coal ores. Stone texture made by zoey (goodly), ores modified by sofa (comfiestsofa).\n\nClassiCube: https://classicube.net",
+			"type": "resources",
+			"uuid": "b1712be0-18de-4b88-91ba-ccad1cf7891a",
+			"version": [1, 0, 0]
+		}
+	]
+}

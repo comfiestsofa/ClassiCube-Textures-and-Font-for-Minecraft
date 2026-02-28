@@ -1,0 +1,17 @@
+{
+	"format_version": 1,
+	"header": {
+		"name": "ClassiCube Lava",
+		"description": "(Not recommended) ClassiCube's lava textures. Made by zoey (goodly), ported by sofa (comfiestsofa).\n\nClassiCube: https://classicube.net",
+		"uuid": "f3c5443f-852f-45a0-bbb3-0bb7af15c606",
+		"version": [1, 0, 0]
+	},
+	"modules": [
+		{
+			"description": "(Not recommended) ClassiCube's lava textures. Made by zoey (goodly), ported by sofa (comfiestsofa).\n\nClassiCube: https://classicube.net",
+			"type": "resources",
+			"uuid": "73fd2978-cda3-420a-ad90-cdc675d125bb",
+			"version": [1, 0, 0]
+		}
+	]
+}

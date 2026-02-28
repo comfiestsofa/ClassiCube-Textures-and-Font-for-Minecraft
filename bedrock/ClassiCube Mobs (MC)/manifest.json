@@ -1,0 +1,17 @@
+{
+	"format_version": 1,
+	"header": {
+		"name": "ClassiCube Mobs (MC)",
+		"description": "ClassiCube's mob textures, but with the iconic faces restored for creepers, skeletons, and zombies. Made by zoey (goodly), modified by sofa (comfiestsofa).\n\nClassiCube: https://classicube.net",
+		"uuid": "daeb77c0-04d7-41a3-879d-107f8a0630f1",
+		"version": [1, 0, 0]
+	},
+	"modules": [
+		{
+			"description": "ClassiCube's mob textures, but with the iconic faces restored for creepers, skeletons, and zombies. Made by zoey (goodly), modified by sofa (comfiestsofa).\n\nClassiCube: https://classicube.net",
+			"type": "resources",
+			"uuid": "cd99afd5-6ba3-4aed-908f-0cbfadc58e6f",
+			"version": [1, 0, 0]
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"format_version": 1,
+	"header": {
+		"name": "ClassiCube UI",
+		"description": "ClassiCube's crosshair, and hotbar/buttons in grey. Made by zoey (goodly), ported by sofa (comfiestsofa).\n\nClassiCube: https://classicube.net",
+		"uuid": "dad59582-e0c0-432c-8dfe-7ef6a08b7f6f",
+		"version": [1, 0, 0]
+	},
+	"modules": [
+		{
+			"description": "ClassiCube's crosshair, and hotbar/buttons in grey. Made by zoey (goodly), ported by sofa (comfiestsofa).\n\nClassiCube: https://classicube.net",
+			"type": "resources",
+			"uuid": "5d9fb700-8cb6-4f0a-b64d-a20c69c9206d",
+			"version": [1, 0, 0]
+		}
+	]
+}

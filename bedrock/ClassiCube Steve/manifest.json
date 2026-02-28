@@ -1,0 +1,17 @@
+{
+	"format_version": 1,
+	"header": {
+		"name": "ClassiCube Steve",
+		"description": "ClassiCube's version of Steve. Made by zoey (goodly), ported by sofa (comfiestsofa).\n\nClassiCube: https://classicube.net",
+		"uuid": "dd20647c-accd-4ece-9726-e5c19a0efac5",
+		"version": [1, 0, 0]
+	},
+	"modules": [
+		{
+			"description": "ClassiCube's version of Steve. Made by zoey (goodly), ported by sofa (comfiestsofa).\n\nClassiCube: https://classicube.net",
+			"type": "resources",
+			"uuid": "023df4a0-2e8e-4da1-91ad-382b45a5fe77",
+			"version": [1, 0, 0]
+		}
+	]
+}

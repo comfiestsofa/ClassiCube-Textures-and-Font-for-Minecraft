@@ -1,0 +1,17 @@
+{
+	"format_version": 1,
+	"header": {
+		"name": "ClassiCube Font",
+		"description": "ClassiCube's original compact font. Made by zoey (goodly), ported by sofa (comfiestsofa).\n\nClassiCube: https://classicube.net",
+		"uuid": "03c48368-f787-48b5-b2d9-b2e146c85897",
+		"version": [1, 0, 0]
+	},
+	"modules": [
+		{
+			"description": "ClassiCube's original compact font. Made by zoey (goodly), ported by sofa (comfiestsofa).\n\nClassiCube: https://classicube.net",
+			"type": "resources",
+			"uuid": "99d94734-a634-4258-8165-d04c8275debe",
+			"version": [1, 0, 0]
+		}
+	]
+}
