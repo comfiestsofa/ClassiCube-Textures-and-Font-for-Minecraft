@@ -1,0 +1,17 @@
+{
+	"format_version": 1,
+	"header": {
+		"name": "ClassiCube Sounds",
+		"description": "ClassiCube's CC0 sounds. Assembled by csnxs, ported by sofa (comfiestsofa). See _CREDITS.txt for more info.\n\nClassiCube: https://classicube.net",
+		"uuid": "d595bffd-e573-4235-8307-b34a23db334e",
+		"version": [1, 0, 0]
+	},
+	"modules": [
+		{
+			"description": "ClassiCube's CC0 sounds. Assembled by csnxs, ported by sofa (comfiestsofa). See _CREDITS.txt for more info.\n\nClassiCube: https://classicube.net",
+			"type": "resources",
+			"uuid": "092e270a-6430-40b4-bc76-dffcd3338531",
+			"version": [1, 0, 0]
+		}
+	]
+}
