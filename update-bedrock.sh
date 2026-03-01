@@ -52,7 +52,22 @@ for pack in ClassiCube*/; do
 	# replace generated coloured water with classicube coloured water
 	if [ -f "$packname/textures/blocks/water_still.png" ]; then
 		cp -a "$packname/textures/blocks/unused-classicube/water_still_coloured.png" "$packname/textures/blocks/water_still.png"
+	fi
+	if [ -f "$packname/textures/blocks/water_flow.png" ]; then
 		cp -a "$packname/textures/blocks/unused-classicube/water_flow_coloured.png" "$packname/textures/blocks/water_flow.png"
+	fi
+
+	# fix packconverter bug putting creeper and skeleton textures in the wrong places
+	if [ -f "$packname/textures/entity/creeper.png" ]; then
+		mv -f "$packname/textures/entity/creeper.png" "$packname/textures/entity/creeper/"
+	fi
+	if [ -f "$packname/textures/entity/skeleton.png" ]; then
+		mv -f "$packname/textures/entity/skeleton.png" "$packname/textures/entity/skeleton/"
+	fi
+
+	# fix packconverter not duplicating the chicken texture (idk why bedrock has a second copy of this?)
+	if [ -f "$packname/textures/entity/chicken/chicken.png" ]; then
+		cp -a "$packname/textures/entity/chicken/chicken.png" "$packname/textures/entity/"
 	fi
 done
 
