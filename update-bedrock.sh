@@ -12,22 +12,24 @@ rm -f build/*.mcpack
 
 path="$PWD"
 
+# idk why but gradlew run doesn't like the /e/ style paths so the solution is apparently to use cygpath -m (shrug)
 # https://stackoverflow.com/questions/394230/how-to-detect-the-os-from-a-bash-script
+winpath="$PWD"
 if [[ "$OSTYPE" == "cygwin" ]]; then
 	# POSIX compatibility layer and Linux environment emulation for Windows
-	path="$(cygpath -m "$PWD")"
+	winpath="$(cygpath -m "$PWD")"
 elif [[ "$OSTYPE" == "msys" ]]; then
 	# Lightweight shell and GNU utilities compiled for Windows (part of MinGW)
-	path="$(cygpath -m "$PWD")"
+	winpath="$(cygpath -m "$PWD")"
 elif [[ "$OSTYPE" == "win32" ]]; then
 	# I'm not sure this can happen.
-	path="$(cygpath -m "$PWD")"
+	winpath="$(cygpath -m "$PWD")"
 fi
 
-temp=$(mktemp -d -p .)
+temp=$(mktemp -d -p $PWD)
 
 for pack in build/*.zip; do
-	PackConverter/gradlew -p PackConverter run --args="nogui debug --input \"$path/$pack\""
+	PackConverter/gradlew -p PackConverter run --args="nogui debug --input \"$winpath/$pack\""
 
 	# https://stackoverflow.com/questions/12152626/how-can-i-remove-the-extension-of-a-filename-in-a-shell-script
 	mv "${pack%.*}.mcpack" "$temp/"
@@ -35,9 +37,17 @@ done
 
 cd bedrock
 for pack in ClassiCube*/; do
+	# double slash causes problems
+	# https://stackoverflow.com/questions/9018723/what-is-the-simplest-way-to-remove-a-trailing-slash-from-each-parameter
+	pack=${pack%/}
 	packname="$(basename "$pack")"
-	cp -a "$pack/pack.png" "bedrock/$packname/pack_icon.png"
-	cp -a "$pack/_CREDITS.txt" "bedrock/$packname/"
+	cp -a "$path/$pack/pack.png" "$packname/pack_icon.png"
+	# prevent errors
+	if [ -f "$path/$pack/_CREDITS.txt" ]; then cp -a "$path/$pack/_CREDITS.txt" "$packname/"; fi
+
+	# trying to match "ClassiCube Component 0.0" using "ClassiCube Component(space)" and then checking for a version with *.*.mcpack so we don't accidentally select multiple in cases like "ClassiCube Mobs" and "ClassiCube Mobs (MC)"
+	# unzip -n prevents file overwrite so the converted pack json doesn't get copied
+	unzip -n "$temp/$packname "*.*.mcpack
 done
 
 rm -rf "$temp"
