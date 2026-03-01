@@ -46,9 +46,18 @@ for pack in ClassiCube*/; do
 	# prevent errors
 	if [ -f "$path/$pack/_CREDITS.txt" ]; then cp -a "$path/$pack/_CREDITS.txt" "$packname/"; fi
 
-	unzip -n "$temp/$packname $version".mcpack
+	# unzip contents
+	unzip -n "$temp/$packname $version".mcpack -d "$packname"
+
+	# replace generated coloured water with classicube coloured water
+	if [ -f "$packname/textures/blocks/water_still.png" ]; then
+		cp -a "$packname/textures/blocks/unused-classicube/water_still_coloured.png" "$packname/textures/blocks/water_still.png"
+		cp -a "$packname/textures/blocks/unused-classicube/water_flow_coloured.png" "$packname/textures/blocks/water_flow.png"
+	fi
 done
 
 rm -rf "$temp"
+# delete java builds
+rm -f build/*.zip
 
 exit
