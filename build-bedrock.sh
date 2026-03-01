@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-version="1.0"
+version="$(cat version.txt)"
 
 rm -f build/*.mcpack
 

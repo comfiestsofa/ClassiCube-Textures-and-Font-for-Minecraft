@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+version="$(cat version.txt)"
 
 # delete all folders inside each bedrock pack
 rm -rf bedrock/*/*/
@@ -45,9 +46,7 @@ for pack in ClassiCube*/; do
 	# prevent errors
 	if [ -f "$path/$pack/_CREDITS.txt" ]; then cp -a "$path/$pack/_CREDITS.txt" "$packname/"; fi
 
-	# trying to match "ClassiCube Component 0.0" using "ClassiCube Component(space)" and then checking for a version with *.*.mcpack so we don't accidentally select multiple in cases like "ClassiCube Mobs" and "ClassiCube Mobs (MC)"
-	# unzip -n prevents file overwrite so the converted pack json doesn't get copied
-	unzip -n "$temp/$packname "*.*.mcpack
+	unzip -n "$temp/$packname $version".mcpack
 done
 
 rm -rf "$temp"
