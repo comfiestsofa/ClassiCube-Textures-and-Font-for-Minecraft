@@ -77,6 +77,11 @@ for pack in ClassiCube*/; do
 	if [ -f "$packname/textures/entity/skeleton/skeleton.png" ]; then
 		cp -a "$packname/textures/entity/skeleton/skeleton.png" "$packname/textures/entity/skulls/"
 	fi
+
+	# fix packconverter not processing grass_side.tga correctly
+	if [ -f "$packname/textures/blocks/grass_side.tga" ]; then
+		magick "$packname/textures/blocks/grass_side_carried.png" -alpha set -channel A -evaluate set 1 +channel "$packname/textures/blocks/grass_side.tga" -compose over -composite "$packname/textures/blocks/grass_side.tga"
+	fi
 done
 
 rm -rf "$temp"
