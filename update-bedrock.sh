@@ -58,6 +58,6 @@ done
 
 rm -rf "$temp"
 # delete java builds
-rm -f build/*.zip
+rm -f ../build/*.zip
 
 exit
