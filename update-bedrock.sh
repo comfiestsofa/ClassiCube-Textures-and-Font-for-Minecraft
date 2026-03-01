@@ -69,6 +69,14 @@ for pack in ClassiCube*/; do
 	if [ -f "$packname/textures/entity/chicken/chicken.png" ]; then
 		cp -a "$packname/textures/entity/chicken/chicken.png" "$packname/textures/entity/"
 	fi
+
+	# fix packconverter not duplicating creeper and skeleton textures into the skulls folder
+	if [ -f "$packname/textures/entity/creeper/creeper.png" ]; then
+		cp -a "$packname/textures/entity/creeper/creeper.png" "$packname/textures/entity/skulls/"
+	fi
+	if [ -f "$packname/textures/entity/skeleton/skeleton.png" ]; then
+		cp -a "$packname/textures/entity/skeleton/skeleton.png" "$packname/textures/entity/skulls/"
+	fi
 done
 
 rm -rf "$temp"
