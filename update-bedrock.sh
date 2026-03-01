@@ -33,6 +33,7 @@ for pack in build/*.zip; do
 	mv "${pack%.*}.mcpack" "$temp/"
 done
 
+cd bedrock
 for pack in ClassiCube*/; do
 	packname="$(basename "$pack")"
 	cp -a "$pack/pack.png" "bedrock/$packname/pack_icon.png"
